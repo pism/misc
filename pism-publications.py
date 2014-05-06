@@ -30,3 +30,4 @@ plt.tight_layout()
 
 
 plt.savefig('pism-publications.pdf', bbox_inches='tight')
+plt.savefig('pism-publications.png', bbox_inches='tight')

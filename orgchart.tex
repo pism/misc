@@ -1,0 +1,70 @@
+    \documentclass[12pt]{article}
+    %prepared in AMSLaTeX, under LaTeX2e
+     
+    \usepackage{tikz}
+    \usetikzlibrary{shapes}
+     
+     
+    \begin{document}
+     
+    \definecolor{dark red}{HTML}{E41A1C}
+    \definecolor{dark green}{HTML}{4DAF4A}
+    \definecolor{dark violet}{HTML}{984EA3}
+    \definecolor{dark blue}{HTML}{084594}
+    \definecolor{dark orange}{HTML}{FF7F00}
+    \definecolor{light blue}{HTML}{377EB8}
+    \definecolor{light red}{HTML}{FB9A99}
+    \definecolor{light violet}{HTML}{CAB2D6}
+     
+    % Define block styles
+    \tikzstyle{core} = [rectangle, draw, 
+        text badly centered, inner sep=10pt,draw=dark blue,text width = 6em,minimum height=6em,node distance = 18em, 
+            % The filling: 
+            top color=white, 
+            bottom color=light blue]
+    \tikzstyle{pik} = [ellipse, draw,
+        text badly centered, rounded corners,inner sep=10pt,draw=dark orange,text width = 6em,minimum height=5em,node distance = 18em, 
+            % The filling: 
+            top color=white, 
+            bottom color=dark orange]
+    \tikzstyle{uaf} = [ellipse, draw,
+        text badly centered, inner sep=10pt,draw=dark violet,text width = 6em,minimum height=5em,node distance = 18em, 
+            % The filling: 
+            top color=white, 
+            bottom color=light violet]
+    \tikzstyle{imau} = [ellipse, draw,
+        text badly centered, inner sep=10pt,draw=dark red,text width = 6em,minimum height=5em,node distance = 18em, 
+            % The filling: 
+            top color=white, 
+            bottom color=light red]
+    \tikzstyle{description} = [node distance=10em]
+    \tikzstyle{line} = [draw]
+     
+    \thispagestyle{empty}
+    \begin{tikzpicture}[thick,scale=0.8, every node/.style={transform shape}]
+     
+       % Place nodes
+        \node [core] (core group) {{\sf\large UAF}\\[.5em] \large Bueler\\ Khroulev\\ Aschwanden};
+     
+        \node [pik, right of=core group] (PIK)
+        {{\sf\large PIK}\\[.5em] \large Levermann\\ Martin\\ Winkelmann\\ Albrecht \\ Mengel};
+     
+        \node [uaf, left of=core group] (radar layers)
+        {{\sf\large UAF}\\[.5em] \large Fahnestock};
+          
+        \node [uaf, below of=core group] (regional)
+        {{\sf\large UAF}\\[.5em] \large Ziemen};
+
+        % place lines
+        \path [line] (core group) -- node[anchor=south] {radar layers} (radar layers);		
+     
+        \path [line] (core group) -- node[anchor=south,text width=5em] {ice shelves \\ calving \\ Antarctica} (PIK);		
+     
+        \path [line] (core group) -- node[anchor=east] {regional model} (regional);		
+     
+     
+    \end{tikzpicture}
+     
+    \end{document}
+
+
