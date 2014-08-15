@@ -15,7 +15,7 @@ m.bluemarble(scale=0.25)
  
 # label, point location, label offset
 users = {"UAF"    : [(65, -148), (10,  20)],  # Univ of Alaska, Fairbanks
-         "VUW"    : [(-41, 175), (20, -40)],  # Antarctic Res Centre, Victoria Univ, Wellington
+         "VUW"    : [(-41, 175), (20, -10)],  # Antarctic Res Centre, Victoria Univ, Wellington
          "DMI"    : [(56, 13),   (25,  10)],  # Danish Meteorological Inst
          "CIC"    : [(56, 13),   (0,   40)],    # Centre for Ice and Climate, Univ Copenhagen
          "PIK"    : [(52, 13),   (-20, 20)],  # Potsdam Inst for Climate Impact Res
@@ -27,11 +27,13 @@ users = {"UAF"    : [(65, -148), (10,  20)],  # Univ of Alaska, Fairbanks
          "UIB"    : [(60, 5),    (20, -40)],  # University of Bergen, Norway
          "UNBC"   : [(54, -123), (-5, -60)],   # University of Northern British Columbia
          "UW"     : [(47, -122), (-20, -40)],   # University of Washington
-         "UMaine" : [(45, -69),  (18, 10)],   # University of Maine
+         "UMaine" : [(45, -69),  (18, -10)],   # University of Maine
          "ETH"    : [(47, 8.5),  (-60, -30)],   # ETH Zurich
          "AWI"    : [(53.5, 8.5),  (-15, 60)],   # AWI Bremerhaven
          "Harvard"    : [(42.37, -71.12),  (-65, -10)],   # Harvard
-         "Dickinson"    : [(47,-77),  (-35, -60)],   # Dickinson
+         "Dickinson"    : [(47,-77),  (-50, -90)],   # Dickinson
+         "UNSW"   : [(-34,151),  (-30,-40)], # University of New South Wales
+         "LSU"    : [(30,-91),   (-30,    0)], # Louisiana State University
          }
  
 for name in users.keys():
