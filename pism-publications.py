@@ -23,11 +23,11 @@ ax.yaxis.set_ticks_position('left')
 ymax = np.max(no_of_pubs) + 1
 ax.set_ylim([0, ymax])
 plt.xlabel('year')
-plt.xticks(year + bar_width, year)
+plt.xticks(year + bar_width, year, fontsize=20.0)
+plt.yticks(fontsize=20.0)
 plt.title('Number of PISM publications')
 
 plt.tight_layout()
 
-
-plt.savefig('pism-publications.pdf', bbox_inches='tight')
+#plt.savefig('pism-publications.pdf', bbox_inches='tight')
 plt.savefig('pism-publications.png', bbox_inches='tight')
