@@ -34,6 +34,7 @@ users = {"UAF"    : [(65, -148), (10,  20)],  # Univ of Alaska, Fairbanks
          "Dickinson"    : [(47,-77),  (-50, -90)],   # Dickinson
          "UNSW"   : [(-34,151),  (-30,-40)], # University of New South Wales
          "LSU"    : [(30,-91),   (-30,    0)], # Louisiana State University
+         "UI"     : [(64, -22), (15, -40)],    # University of Iceland
          }
  
 for name in users.keys():
