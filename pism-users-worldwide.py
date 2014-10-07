@@ -27,14 +27,16 @@ users = {"UAF"    : [(65, -148), (10,  20)],  # Univ of Alaska, Fairbanks
          "UIB"    : [(60, 5),    (20, -40)],  # University of Bergen, Norway
          "UNBC"   : [(54, -123), (-5, -60)],   # University of Northern British Columbia
          "UW"     : [(47, -122), (-20, -40)],   # University of Washington
+         "Yale"   : [(41.31, -72.93),  (-85, -30)],   # Yale
          "UMaine" : [(45, -69),  (18, -10)],   # University of Maine
          "ETH"    : [(47, 8.5),  (-60, -30)],   # ETH Zurich
          "AWI"    : [(53.5, 8.5),  (-15, 60)],   # AWI Bremerhaven
          "Harvard"    : [(42.37, -71.12),  (-65, -10)],   # Harvard
-         "Dickinson"    : [(47,-77),  (-50, -90)],   # Dickinson
+         "Dickinson"    : [(47,-77),  (-50, -100)],   # Dickinson
          "UNSW"   : [(-34,151),  (-30,-40)], # University of New South Wales
-         "LSU"    : [(30,-91),   (-30,    0)], # Louisiana State University
+         "LSU"    : [(30,-91),   (-30,    -10)], # Louisiana State University
          "UI"     : [(64, -22), (15, -40)],    # University of Iceland
+         "PKU"   : [(39.91, 116.40),  (-35, -20)],   # Peking University
          }
  
 for name in users.keys():
