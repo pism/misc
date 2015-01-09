@@ -1,6 +1,6 @@
 .gitignore
 *~
-*.png
+pism-*.png
 *.aux
 *.log
 orgchart.pdf
