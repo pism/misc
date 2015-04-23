@@ -54,8 +54,9 @@ ax.set_ylim([0, ymax])
 plt.xlabel('year')
 plt.xticks(year + bar_width, year, fontsize=20.0)
 plt.yticks(fontsize=20.0)
-plt.title('Number of PISM publications\nyellow = has UAF (co-)authors')
+plt.text(2007.5,3.0,'yellow = UAF (co-)authors')
+plt.title('Number of PISM publications')
 
 plt.tight_layout()
 
-plt.savefig('pism-uaf-publications.png', bbox_inches='tight')
+plt.savefig('pism-uaf-publications.png', bbox_inches='tight', dpi=200)
