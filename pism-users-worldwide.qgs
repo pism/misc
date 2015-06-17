@@ -1,9 +1,9 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis projectname="" version="2.8.2-Wien">
   <title></title>
-  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="pism_users20150616175055546" name="pism-users">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="pism_users20150616175055546" name="pism-users">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="TrueMarble_16km_2700x1350_tif20150616174912153" name="TrueMarble.16km.2700x1350.tif">
@@ -14,10 +14,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>-167.08313584225993509</xmin>
-      <ymin>24.65551237084085301</ymin>
-      <xmax>-52.07014882927295218</xmax>
-      <ymax>82.16200587733435157</ymax>
+      <xmin>-188.40875912408759518</xmin>
+      <ymin>-88.98175182481750767</ymin>
+      <xmax>189.59124087591240482</xmax>
+      <ymax>100.01824817518249233</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -43,9 +43,9 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="pism-users" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="pism-users" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="pism_users20150616175055546" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="pism_users20150616175055546" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="TrueMarble.16km.2700x1350.tif" showFeatureCount="0">
@@ -54,8 +54,8 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="world map collage" visible="1">
-    <Composition gridVisible="0" printResolution="300" paperWidth="160" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="120" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+  <Composer title="world map collage" visible="0">
+    <Composition gridVisible="0" printResolution="300" paperWidth="180" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="160" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0"/>
@@ -71,23 +71,188 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerMap mapRotation="0" keepLayerSet="false" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="-106.22627737226278555" xmin="-189" ymax="238.17372262773719171" xmax="189"/>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="3" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="-72.50492338419505245" xmin="-181.46456040670835819" ymax="83.54141973456003711" xmax="182.64704215853316782"/>
+        <LayerSet>
+          <Layer>TrueMarble_16km_2700x1350_tif20150616174912153</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapOverview frameMap="0" centered="0" inverted="0" uuid="{f3c7fb68-fdd8-4a4e-b5aa-972aa5abfe63}" name="Overview 1" show="1" blendMode="0">
+          <symbol alpha="0.3" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <ComposerMapOverview frameMap="1" centered="0" inverted="0" uuid="{c3762b08-2f34-4c40-8398-0d22cc0df3b8}" name="Overview 2" show="1" blendMode="0">
+          <symbol alpha="0.3" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <ComposerMapOverview frameMap="2" centered="0" inverted="0" uuid="{c16b10bc-4e32-4227-aafc-bed3cb2be3a8}" name="Overview 3" show="1" blendMode="0">
+          <symbol alpha="0.3" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="47.7524" page="1" id="" lastValidViewScaleFactor="5.31667" positionMode="0" positionLock="false" x="3" y="47.7524" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.8448" outlineWidth="0.5" excludeFromExports="0" uuid="{7fcd58e7-5a0c-443b-b1e2-64f3abefcbad}" height="23.5047" itemRotation="0" frame="true" pagex="3">
+          <FrameColor alpha="255" red="255" blue="255" green="255"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="2" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="-59.8417744418695321" xmin="146.76172581666176598" ymax="-27.25521740215126698" xmax="179.64711456089585795"/>
         <LayerSet/>
         <Grid/>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="10.8834" page="1" id="" lastValidViewScaleFactor="4.89265" positionMode="0" positionLock="false" x="94.5924" y="10.8834" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="45" outlineWidth="0.3" excludeFromExports="0" uuid="{8228f163-8919-4f7f-876b-40b74b78bd4d}" height="41" itemRotation="0" frame="false" pagex="94.5924">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="75.7724" page="1" id="" lastValidViewScaleFactor="5.31667" positionMode="0" positionLock="false" x="95" y="75.7724" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="85" outlineWidth="0.2" excludeFromExports="0" uuid="{bad14e7e-d076-40e8-8285-f6a73e7b21cd}" height="84.2276" itemRotation="0" frame="true" pagex="95">
+          <FrameColor alpha="255" red="255" blue="255" green="255"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="1" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="24.9170852959049185" xmin="-23.76503022603625936" ymax="75.84668532567141597" xmax="33.67827860435225773"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{b83b0f8a-6dc5-4e4c-9116-09da3cdd2a23}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="75.7724" page="1" id="" lastValidViewScaleFactor="5.31667" positionMode="0" positionLock="false" x="0" y="75.7724" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="95" outlineWidth="0.2" excludeFromExports="0" uuid="{8228f163-8919-4f7f-876b-40b74b78bd4d}" height="84.2276" itemRotation="0" frame="true" pagex="0">
+          <FrameColor alpha="255" red="255" blue="255" green="255"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
       <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="4.65325375988660994" xmin="-167.08313584225993509" ymax="78.32642114714458614" xmax="-52.07014882927295218"/>
+        <Extent ymin="27.59841327494181229" xmin="-165.87075345465828491" ymax="75.29621461268689586" xmax="-52.56295048478089171"/>
         <LayerSet/>
         <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{4efa1702-0f11-4318-af84-4650ed0e77c9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="4.89265" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="77.4758" outlineWidth="0.3" excludeFromExports="0" uuid="{8e5002ca-8251-4fa8-b7d1-f73d5c6bbe66}" height="49.6282" itemRotation="0" frame="false" pagex="0">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="5.31667" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="180" outlineWidth="0.2" excludeFromExports="0" uuid="{8e5002ca-8251-4fa8-b7d1-f73d5c6bbe66}" height="75.7724" itemRotation="0" frame="true" pagex="0">
+          <FrameColor alpha="255" red="255" blue="255" green="255"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
@@ -96,7 +261,7 @@
   <projectlayers layercount="2">
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <id>TrueMarble_16km_2700x1350_tif20150616174912153</id>
-      <datasource>/vsigzip/TrueMarble.16km.2700x1350.tif.gz</datasource>
+      <datasource>/vsigzip//Users/andy/base/misc/TrueMarble.16km.2700x1350.tif.gz</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -377,10 +542,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
