@@ -6,7 +6,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="pism_users20150616175055546" name="pism-users">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="TrueMarble_16km_2700x1350_tif20150616174912153" name="TrueMarble.16km.2700x1350.tif">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="TrueMarble_16km_2700x135020150617115502030" name="TrueMarble.16km.2700x1350">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -38,8 +38,8 @@
   <visibility-presets/>
   <layer-tree-canvas>
     <custom-order enabled="0">
-      <item>TrueMarble_16km_2700x1350_tif20150616174912153</item>
       <item>pism_users20150616175055546</item>
+      <item>TrueMarble_16km_2700x135020150617115502030</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -48,9 +48,9 @@
         <legendlayerfile isInOverview="0" layerid="pism_users20150616175055546" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="TrueMarble.16km.2700x1350.tif" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="TrueMarble.16km.2700x1350" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="TrueMarble_16km_2700x1350_tif20150616174912153" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="TrueMarble_16km_2700x135020150617115502030" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -260,14 +260,14 @@
   </Composer>
   <projectlayers layercount="2">
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-      <id>TrueMarble_16km_2700x1350_tif20150616174912153</id>
-      <datasource>/vsigzip//Users/andy/base/misc/TrueMarble.16km.2700x1350.tif.gz</datasource>
+      <id>TrueMarble_16km_2700x135020150617115502030</id>
+      <datasource>./TrueMarble.16km.2700x1350.tif</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>TrueMarble.16km.2700x1350.tif</layername>
+      <layername>TrueMarble.16km.2700x1350</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -589,15 +589,25 @@
     </Gui>
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
-      <LayerSnappingList type="QStringList"/>
-      <LayerSnappingEnabledList type="QStringList"/>
+      <LayerSnappingList type="QStringList">
+        <value>pism_users20150616175055546</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
-      <LayerSnappingToleranceUnitList type="QStringList"/>
-      <LayerSnapToList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>0</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
-      <LayerSnappingToleranceList type="QStringList"/>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
     </Digitizing>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>
