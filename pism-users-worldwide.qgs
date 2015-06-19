@@ -17,10 +17,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>-22.39950502247073416</xmin>
-      <ymin>34.96980234166427692</ymin>
-      <xmax>31.88208957753295891</xmax>
-      <ymax>69.61138570672825665</ymax>
+      <xmin>130.61753551966637588</xmin>
+      <ymin>-53.95349095836486697</ymin>
+      <xmax>178.51673562446950427</xmax>
+      <ymax>-28.19645278639882235</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -81,7 +81,7 @@
         </layer>
       </symbol>
       <ComposerMap mapRotation="0" keepLayerSet="false" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="-54.10333204315569589" xmin="133.13986044697873012" ymax="-28.34629387118965127" xmax="181.03906055178185852"/>
+        <Extent ymin="-53.9143774114452512" xmin="130.69027321560031396" ymax="-28.23556633331843813" xmax="178.44399792853556619"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont=".Lucida Grande UI,13,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{815b6d4d-3c19-49aa-b883-c9978653b99f}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
