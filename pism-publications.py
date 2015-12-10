@@ -14,7 +14,7 @@ bar_width = 0.5
 plt.xkcd(scale=1, length=100, randomness=1)
 
 
-### bar graph with total pubs in different color ###
+### bar graph with total pubs ###
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 ax.bar(year + bar_width/2, no_of_pubs, bar_width, 
@@ -26,8 +26,9 @@ ax.yaxis.set_ticks_position('left')
 
 ymax = np.max(no_of_pubs) + 1
 ax.set_ylim([0, ymax])
+ax.set_xlim([np.min(year), np.max(year)+1.0])
 plt.xlabel('year')
-plt.xticks(year + bar_width, year, fontsize=20.0)
+plt.xticks(year + bar_width, year, fontsize=16.0)
 plt.yticks(fontsize=20.0)
 plt.title('Number of PISM publications')
 
@@ -51,8 +52,9 @@ ax.yaxis.set_ticks_position('left')
 
 ymax = np.max(no_of_pubs) + 1
 ax.set_ylim([0, ymax])
+ax.set_xlim([np.min(year), np.max(year)+1.0])
 plt.xlabel('year')
-plt.xticks(year + bar_width, year, fontsize=20.0)
+plt.xticks(year + bar_width, year, fontsize=16.0)
 plt.yticks(fontsize=20.0)
 plt.text(2007.5,3.0,'yellow = UAF (co-)authors')
 plt.title('Number of PISM publications')
