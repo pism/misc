@@ -26,7 +26,7 @@ def completeit(ax,year,ymax,xtickoffset):
     ax.set_xlim([np.min(year), np.max(year)+1.0])
     plt.xlabel('year')
     plt.xticks(year + xtickoffset, year, fontsize=16.0)
-    plt.yticks(fontsize=20.0)
+    plt.yticks(np.arange(0,ymax+1,3),fontsize=20.0)
     plt.title('Number of PISM publications')
     plt.tight_layout()
 
