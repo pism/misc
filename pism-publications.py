@@ -27,7 +27,6 @@ def completeit(ax,year,ymax,xtickoffset):
     plt.xlabel('year')
     plt.xticks(year + xtickoffset, year, fontsize=16.0)
     plt.yticks(np.arange(0,ymax+1,3),fontsize=20.0)
-    plt.title('Number of PISM publications')
     plt.tight_layout()
 
 year, no_of_pubs, no_of_uaf_pubs = np.loadtxt('pism-publications.csv', delimiter=',', skiprows=1, 
@@ -41,6 +40,7 @@ ax = startit()
 ax.bar(year + bar_width/2, no_of_pubs, bar_width, 
        color='#C6DBEF', edgecolor='#3182BD', linewidth=2.5)
 completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
+plt.title('Number of PISM publications, %d so far' % sum(no_of_pubs))
 saveit('pism-publications.png')
 
 ### bar graph with UAF pubs in different color ###
@@ -51,5 +51,6 @@ ax.bar(year + bar_width/2, no_of_uaf_pubs, bar_width,
        color='#FFEA00', edgecolor='#FFD500', linewidth=2.5)
 completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
 plt.text(2007.5,4.0,'yellow\n= UAF (co-)authors')
+plt.title('Number of PISM publications')
 saveit('pism-uaf-publications.png')
 
