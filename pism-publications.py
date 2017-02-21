@@ -40,7 +40,7 @@ ax = startit()
 ax.bar(year + bar_width/2, no_of_pubs, bar_width, 
        color='#C6DBEF', edgecolor='#3182BD', linewidth=2.5)
 completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
-plt.title('Number of PISM publications, %d so far' % sum(no_of_pubs))
+plt.title('Number of PISM publications (%d so far)' % sum(no_of_pubs))
 saveit('pism-publications.png')
 
 ### bar graph with UAF pubs in different color ###
@@ -51,6 +51,6 @@ ax.bar(year + bar_width/2, no_of_uaf_pubs, bar_width,
        color='#FFEA00', edgecolor='#FFD500', linewidth=2.5)
 completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
 plt.text(2007.5,4.0,'yellow\n= UAF (co-)authors')
-plt.title('Number of PISM publications')
+plt.title('Number of PISM publications (%d so far)' % sum(no_of_pubs))
 saveit('pism-uaf-publications.png')
 
