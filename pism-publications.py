@@ -77,5 +77,8 @@ ax.bar(year + bar_width/2, no_of_pubs, bar_width,
        color='#C6DBEF', edgecolor='#3182BD', linewidth=2.5)
 completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
 plt.title('Number of PISM publications (%d so far)' % sum(no_of_pubs))
+ticklabels = ax.get_xticklabels()
+for tick in ticklabels:
+    tick.set_rotation(90)
 saveit('pism-publications.png')
 
