@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# (C) 2014 Andy Aschwanden
+# (C) 2014--2018 Andy Aschwanden, Ed Bueler
 #
 # XKCD-style plot of pism publications per year.
 
@@ -29,25 +29,8 @@ def completeit(ax,year,ymax,xtickoffset):
     plt.yticks(np.arange(0,ymax+1,3),fontsize=16.0)
     plt.tight_layout()
 
-year, no_of_pubs, no_of_uaf_pubs, no_of_aa_pubs = np.loadtxt('pism-publications.csv', delimiter=',', skiprows=1, 
-               dtype=int,  unpack=True)
-
+year, no_of_pubs, no_of_uaf_pubs, no_of_aa_pubs = np.loadtxt('pism-publications.csv', delimiter=',', skiprows=1, dtype=int, unpack=True)
 bar_width = 0.5
-
-### bar graph with UAF pubs in different color ###
-ax = startit()
-ax.bar(year + bar_width/2, no_of_pubs, bar_width, 
-       color='#bdd7e7', edgecolor='#3182BD', linewidth=2.5)
-ax.bar(year + bar_width/2, no_of_uaf_pubs, bar_width, 
-       color='#fdbe85', edgecolor='#a63603', linewidth=2.5)
-completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
-plt.text(2007.5,15.0,'orange\n= UAF (co-)authors', fontsize=18)
-plt.title('Number of PISM publications (%d so far)' % sum(no_of_pubs), fontsize=18)
-ax.set_xlim(2007)
-ticklabels = ax.get_xticklabels()
-for tick in ticklabels:
-    tick.set_rotation(90)
-saveit('pism-uaf-publications.png')
 
 ### bar graph with AA pubs
 ax = startit()
@@ -68,10 +51,28 @@ for tick in ticklabels:
     tick.set_rotation(90)
 saveit('aschwanden-publications.png')
 
+# remove zero years at start
+no_of_pubs = no_of_pubs[year>=2007]
+no_of_uaf_pubs = no_of_uaf_pubs[year>=2007]
+year = year[year>=2007]
 
-plt.xkcd(scale=1, length=100, randomness=1)
+### bar graph with UAF pubs in different color ###
+ax = startit()
+ax.bar(year + bar_width/2, no_of_pubs, bar_width,
+       color='#bdd7e7', edgecolor='#3182BD', linewidth=2.5)
+ax.bar(year + bar_width/2, no_of_uaf_pubs, bar_width,
+       color='#fdbe85', edgecolor='#a63603', linewidth=2.5)
+completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
+plt.text(2007.5,15.0,'orange\n= UAF (co-)authors', fontsize=18)
+plt.title('Number of PISM publications (%d so far)' % sum(no_of_pubs), fontsize=18)
+ax.set_xlim(2007)
+ticklabels = ax.get_xticklabels()
+for tick in ticklabels:
+    tick.set_rotation(90)
+saveit('pism-uaf-publications.png')
 
 ### bar graph with total pubs ###
+plt.xkcd(scale=1, length=100, randomness=1)
 ax = startit()
 ax.bar(year + bar_width/2, no_of_pubs, bar_width, 
        color='#C6DBEF', edgecolor='#3182BD', linewidth=2.5)
