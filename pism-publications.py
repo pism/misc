@@ -65,7 +65,6 @@ ax.bar(year + bar_width/2, no_of_uaf_pubs, bar_width,
 completeit(ax,year,np.max(no_of_pubs) + 1,bar_width)
 plt.text(2007.5,15.0,'orange\n= UAF (co-)authors', fontsize=18)
 plt.title('Number of PISM publications (%d so far)' % sum(no_of_pubs), fontsize=18)
-ax.set_xlim(2007)
 ticklabels = ax.get_xticklabels()
 for tick in ticklabels:
     tick.set_rotation(90)
