@@ -1,12 +1,21 @@
 identifier,journal initials,publication year
+Stapetal2019,GRL,2019
+Seroussietal2019,TC,2019
+Elyetal2019,GMD,2019
+Gowanetal2019,other,2019,"Earth System Science Data"
+Golledgeetal2019,N,2019
+Ziemenetal2019,CP,2019
+Beyeretal2018,TC,2018
+SHMIP2018,JG,2018
+Humbertetal2018,JGRES,2018
 Yanetal2018,GRL,2018
 Seguinotetal2018,TC,2018
-Dickensetal2018,other,2018
+Dickensetal2018,other,2018,"IEEE International Parallel and Distributed Processing Symposium"
 Kingslakeetal2018,N,2018
 Nielsenetal2018,JG,2018
 Collonietal2018,NC,2018
 Reeseetal2018,TC,2018
-Zhangetal2017,other,2017
+Zhangetal2017,other,2017,"Quaternary Research"
 StuhnePeltier2017,JGRES,2017
 Habermannetal2017,JG,2017
 FeldmannLevermann2017,TC,2017
@@ -14,15 +23,15 @@ Pittardetal2017,GRL,2017
 Golledgeetal2017CP,CP,2017
 Jouvetetal2017,JG,2017
 Golledgeetal2017,GRL,2017
-Dickensetal2016,other,2016
+Dickensetal2016,other,2016,"Proceedings of the 2016 Winter Simulation Conference"
 Fogwilletal2017,SR,2017
 Macgregoretal2016,JGRES,2016
 Weikusatetal2016,PTRSA,2016
 Bakkeretal2016,N,2017
 Pittardetal2016AG,AG,2016
-Fogwilletal2016,other,2016
+Fogwilletal2016,other,2016,"PAGES Magazine"
 RobelTziperman2016,JGRES,2016
-Beckeretal2016,other,2016
+Beckeretal2016,other,2016,"Geographica Helvetica"
 FeldmannLevermann2016,TC,2016
 Aitkenetal2016,N,2016
 Bartetal2016,GPC,2016
@@ -35,7 +44,7 @@ Yanetal2016,JGRA,2016
 Aschwandenetal2016,NC,2016
 Frieleretal2016,ESD,2016
 MengelFeldmannLevermann2016,NCC,2016
-Dickens2015,other,2015
+Dickens2015,other,2015,"Algorithms and Architectures for Parallel Processing"
 StuhnePeltier2015,JGRES,2015
 FeldmanLevermann2015,PNAS,2015
 Golledgeetal2015,N,2015
@@ -62,10 +71,10 @@ HabermanTrufferMaxwell2013,TC,2013
 Rodehackeetal2013,GRL,2013
 Golledgeetal2013,QSR,2013
 WinkelmannLevermann2013,CD,2013
-Solgaardetal2013,other,2013
+Solgaardetal2013,other,2013,"Palaeogeography, Palaeoclimatology, Palaeoecology"
 vanPeltetal2013,TC,2013
 AschwandenAdalgeirsdottirKhroulev2013,TC,2013
-DickensMorey2013,other,2013
+DickensMorey2013,other,2013,"Parallel and Distributed Processing Symposium"
 Pattyn2013MISMIP3D,JG,2013
 Nowicki2013AntarcticaSeaRISE,JGRES,2013
 Nowicki2013GreenlandSeaRISE,JGRES,2013

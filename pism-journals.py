@@ -2,7 +2,7 @@
 #
 # (C) 2018 Ed Bueler
 #
-# bar plot of pism publications versus journal impact factor
+# bar plot of pism publications versus 2018 journal impact factor
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -63,8 +63,8 @@ xx = range(len(frequency))
 ax.grid(axis='y')
 ax.bar(xx, frequency, bar_width, linewidth=2.5, color='#a63603')
 ax.set_yticks(np.linspace(0,20,5))
-ax.set_ylabel('number of PISM publications')
-ax.set_xlabel(r'increasing 2018 Journal Impact Factor $\to$',fontsize=14.0)
+ax.set_ylabel('number of PISM publications',fontsize=14.0)
+ax.set_xlabel(r'increasing Journal Impact Factor $\to$',fontsize=14.0)
 ax.set_xticks(xx)
 ax.set_xticklabels(initials, style='italic')
 ticklabels = ax.get_xticklabels()
