@@ -1,10 +1,18 @@
 identifier,journal initials,publication year
+Clarketal2020,N,2020
+Golledge2020,other,2020,"WIREs Climate Change"
+Albrechtetal2020partII,TC,2020
+Albrechtetal2020partI,TC,2020
+Levermannetal2019,ESD,2019
+Schmidtetal2019,JG,2019
+Imhofetal2019,JG,2019
+Niuetal2019b,GRL,2019
 Lowryetal2019,SA,2019
 Sutteretal2019,TC,2019
 Mottrametal2019,other,2019,"Remote Sensing"
 Feldmannetal2019,SA,2019
 Elyetal2019b,JQS,2019
-Niuetal2019,JG,2019
+Niuetal2019a,JG,2019
 Aschwandental2019,SA,2019
 Stapetal2019,GRL,2019
 Seroussietal2019,TC,2019
@@ -12,6 +20,7 @@ Elyetal2019a,GMD,2019
 Gowanetal2019,other,2019,"Earth System Science Data"
 Golledgeetal2019,N,2019
 Ziemenetal2019,CP,2019
+Goelzeretal2018,TC,2018
 Beyeretal2018,TC,2018
 SHMIP2018,JG,2018
 Humbertetal2018,JGRES,2018
