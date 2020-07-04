@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
-# (C) 2014--2018 Andy Aschwanden, Ed Bueler
+# (C) 2014--2020 Andy Aschwanden, Ed Bueler
 #
 # XKCD-style plot of pism publications per year.
 
